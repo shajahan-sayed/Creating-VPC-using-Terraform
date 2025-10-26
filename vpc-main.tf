@@ -32,7 +32,7 @@ resource "aws_subnet" "private" {
 }
   resource "aws_nat_gateway" "vpc-nat" {
     subnet_id = aws_subnet.public.id
-    connectivity_type = "public"
+    connectivity_type = "private"
     tags = {
       Name = "vpc-nat"
     }
