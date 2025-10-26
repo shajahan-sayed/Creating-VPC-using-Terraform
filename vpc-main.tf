@@ -25,14 +25,14 @@ resource "aws_subnet" "public" {
 resource "aws_subnet" "private" {
   vpc_id = aws_vpc.vpc1.id
   cidr_block = var.private_subnet_cidr
-  availbility_zone = "${var.aws_region}a"
+  availability_zone = "${var.aws_region}a"
   tags = {
     Name = "vpc-private_subnet"
   }
 }
   resource "aws_nat_gateway" "vpc-nat" {
     subnet_id = aws_subnet.public.id
-    connectivity = "public"
+    connectivity_type = "public"
     tags = {
       Name = "vpc-nat"
     }
