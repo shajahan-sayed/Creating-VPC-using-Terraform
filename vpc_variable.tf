@@ -11,7 +11,7 @@ variable "vpc_cidr" {
 variable "public_subnet_cidr" {
   description = "Creating CIDR block for public subnet"
   type = string
-  default = "10.0.1.0/26
+  default = "10.0.1.0/26"
 }
 variable "private_subnet_cidr" {
   decription = "creating CIDR block for private subnet"
@@ -24,7 +24,7 @@ variable "key_name" {
 }
 variable "instance_type" {
   description = "creating instance type"
-  type = sring
+  type = string
   default = "t2.micro"
 }
 variable "ami_id" {
