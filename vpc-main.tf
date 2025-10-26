@@ -1,6 +1,5 @@
 #creating VPC
 resource "aws_vpc" "vpc1" {
-  description = "creating vpc to host public subnet and private subnet"
   cidr_block = var.vpc_cidr
   tags = {
     Name = "vpc1"
