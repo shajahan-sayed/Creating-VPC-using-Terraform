@@ -14,9 +14,9 @@ variable "public_subnet_cidr" {
   default = "10.0.1.0/26"
 }
 variable "private_subnet_cidr" {
-  decription = "creating CIDR block for private subnet"
+  description = "creating CIDR block for private subnet"
   type = string
-  default = "10.0.2.0/24
+  default = "10.0.2.0/24"
 }
 variable "key_name" {
   description = "creating key name"
